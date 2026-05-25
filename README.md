@@ -102,32 +102,6 @@ This ensures the code always builds correctly and not just on my own computer.
 The workflow file is located at: `.github/workflows/build.yml`
 
 
-
----
-
-## 📂 Project Structure
-SocialSpark/
-├── app/
-│   ├── src/
-│   │   └── main/
-│   │       ├── java/com/yourname/socialspark/
-│   │       │   └── MainActivity.kt       ← All app logic
-│   │       └── res/
-│   │           ├── layout/
-│   │           │   └── activity_main.xml ← UI design
-│   │           └── values/
-│   │               ├── colors.xml        ← App colours
-│   │               └── themes.xml        ← App theme
-├── .github/
-│   └── workflows/
-│       └── build.yml                     ← GitHub Actions config
-└── README.md                             ← This file
-
-
-
-
----
-
 ## 🧪 Testing
 
 Manual testing was conducted on a **Pixel 6 emulator (API 34)**:
