@@ -129,7 +129,14 @@ Logging (using Android's `Log` class) was used throughout development to trace e
 
 ## 📚 References
 
-- The Independent Institute of Education. (2026). *IMAD5112 Module Manual: Introduction to Mobile Application Development*. IIE.
-- Android Developers. (2026). *Android Studio documentation*. https://developer.android.com/studio
-- Android Developers. (2026). *Kotlin for Android*. https://developer.android.com/kotlin
-- GitHub. (2026). *GitHub Actions documentation*. https://docs.github.com/en/actions
+Android Developers, 2026. Build your first Android app in Kotlin. [online] Available at: https://developer.android.com/training/basics/firstapp [Accessed 22 May 2026].
+
+Ghaleb, T.A., Abduljalil, O. and Hassan, S., 2024. CI/CD configuration practices in open-source Android apps: An empirical study. ACM Transactions on Software Engineering and Methodology, [e-journal] Available at: https://doi.org/10.48550/arxiv.2411.06077 [Accessed 21 May 2026].
+
+GitHub Marketplace, 2026. Automated build Android app with GitHub action. [online] Available at: https://github.com/marketplace/actions/automated-build-android-app-with-github-action [Accessed 22 May 2026].
+
+Independent Institute of Education, 2026. IMAD5112 Github-actions build.yml. [online] Available at: https://github.com/IMAD5112/Github-actions/blob/main/.github/workflows/build.yml [Accessed 22 May 2026].
+
+JetBrains, 2026. Conditions and loops. [online] Available at: https://kotlinlang.org/docs/control-flow.html [Accessed 23 May 2026].
+
+Zhao, Y., Yu, T., Su, T., Liu, Y., Zheng, W., Zhang, J. and G.J. Halfond, W., 2019. ReCDroid: Automatically reproducing Android application crashes from bug reports. In: 2019 IEEE/ACM 41st International Conference on Software Engineering (ICSE). [online] Available at: https://doi.org/10.1109/icse.2019.00030 [Accessed 22 May 2026]
