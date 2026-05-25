@@ -1,8 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.SocialSpark" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.SocialSpark" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/app_red</item>
+        <item name="colorPrimaryDark">@color/app_dark</item>
+        <item name="colorAccent">@color/app_red</item>
+        <item name="android:windowBackground">@color/app_dark</item>
+        <item name="android:statusBarColor">@color/app_dark</item>
     </style>
 
     <style name="Theme.SocialSpark" parent="Base.Theme.SocialSpark" />

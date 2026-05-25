@@ -1,19 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#1A1A2E"
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- App Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✨ Social Spark"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#E94560"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stay connected, one spark at a time"
+            android:textSize="14sp"
+            android:textColor="#A0A0C0"
+            android:layout_marginBottom="40dp"/>
+
+        <!-- Card container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#16213E"
+            android:padding="24dp">
+
+            <!-- Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What time of day is it?"
+                android:textSize="16sp"
+                android:textColor="#E0E0FF"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Text Input -->
+            <EditText
+                android:id="@+id/etTimeOfDay"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="e.g. Morning, Afternoon, Dinner..."
+                android:textColor="#FFFFFF"
+                android:textColorHint="#666680"
+                android:textSize="15sp"
+                android:background="#0F3460"
+                android:padding="16dp"
+                android:inputType="text"
+                android:maxLines="1"
+                android:imeOptions="actionDone"/>
+
+            <!-- Spark Button -->
+            <Button
+                android:id="@+id/btnGetSpark"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="GET MY SPARK ✨"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:backgroundTint="#E94560"
+                android:layout_marginTop="16dp"/>
+
+            <!-- Reset Button -->
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="RESET"
+                android:textColor="#A0A0C0"
+                android:textSize="14sp"
+                android:backgroundTint="#0F3460"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+        <!-- Result Card -->
+        <LinearLayout
+            android:id="@+id/layoutResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#0F3460"
+            android:padding="24dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone">
+
+            <!-- Spark Icon Label -->
+            <TextView
+                android:id="@+id/tvSparkLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔥 YOUR SOCIAL SPARK"
+                android:textSize="12sp"
+                android:textColor="#E94560"
+                android:textStyle="bold"
+                android:letterSpacing="0.15"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- The actual suggestion -->
+            <TextView
+                android:id="@+id/tvSuggestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:lineSpacingMultiplier="1.4"/>
+
+            <!-- Time period echo -->
+            <TextView
+                android:id="@+id/tvTimePeriod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="13sp"
+                android:textColor="#A0A0C0"
+                android:layout_marginTop="12dp"/>
+
+        </LinearLayout>
+
+        <!-- Error Card -->
+        <LinearLayout
+            android:id="@+id/layoutError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#3D0A0A"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="15sp"
+                android:textColor="#FF6B6B"/>
+
+        </LinearLayout>
+
+        <!-- Tips section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#16213E"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💡 Valid time periods:"
+                android:textSize="14sp"
+                android:textColor="#E94560"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="• Morning\n• Mid-morning\n• Afternoon\n• Afternoon Snack Time\n• Dinner\n• After Dinner"
+                android:textSize="13sp"
+                android:textColor="#A0A0C0"
+                android:lineSpacingMultiplier="1.6"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
