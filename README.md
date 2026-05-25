@@ -1,1 +1,146 @@
-# IMAD5112-Assignment1
+#  Social Spark App
+
+## IMAD5112 Assignment 1 | 2026
+
+**Student Name:** Ali Abbas Gaffar 
+**Student Number:** ST10497389 
+**Course:** Introduction to Mobile Application Development (IMAD5112)
+
+---
+
+## 📱 App Overview
+
+**Social Spark** is a native Android app built with Kotlin that helps users stay socially connected throughout their busy day. The app suggests small but meaningful social "spark" actions based on the time of day the user is currently in.
+
+The app was designed for **Cora**, who struggles to maintain social connections during busy days. Social Spark simplifies this by providing a quick, fun suggestion that only takes a minute or two to carry out.
+
+---
+
+## 🎯 Purpose of the App
+
+Modern life is busy, and it's easy to forget to check in with the people we care about. Social Spark solves this problem by:
+
+- Giving users a simple, low-effort social action they can do right now
+- Making the experience fun and engaging with an attractive UI
+- Removing the decision fatigue of "who should I reach out to and how?"
+
+---
+
+## 🔧 Features
+
+| Feature | Description |
+|---|---|
+| Time input | User types their current time of day |
+| Smart suggestions | App returns a personalised social spark based on input |
+| Error handling | App gives helpful feedback for unrecognised input |
+| Reset button | One tap clears everything and starts fresh |
+| Logging | App logs all key events for debugging (visible in Logcat) |
+
+---
+
+## 💡 Social Spark Suggestions
+
+| Time of Day | Suggestion |
+|---|---|
+| Morning | Send a "Good morning" text to a family member |
+| Mid-morning | Reach out to a colleague with a quick "Thank you" |
+| Afternoon | Share a funny meme or interesting link with a friend |
+| Afternoon Snack Time | Send a quick "thinking of you" message |
+| Dinner | Call a friend or relative for a 5-minute catch-up |
+| After Dinner / Night | Leave a thoughtful comment on a friend's post |
+
+---
+
+## 🎨 Design Considerations
+
+The app uses a dark theme with a red accent colour (`#E94560`) to create a modern, energetic feel that matches the app's purpose of sparking social energy.
+
+**Colour palette:**
+- Background: `#1A1A2E` (Deep navy)
+- Card surfaces: `#16213E` and `#0F3460` (Layered blues)  
+- Accent: `#E94560` (Energetic red)
+- Text: `#FFFFFF` and `#A0A0C0`
+
+**UX decisions:**
+- A hints section at the bottom shows users exactly what to type, reducing frustration
+- The result card is hidden until needed, keeping the interface clean
+- Error messages are friendly and instructive, not punishing
+
+---
+
+## 🛠️ How to Run the App
+
+1. Clone this repository:
+git clone : https://github.com/AliAbbasGaffar/IMAD5112-Assignment-1
+2. Open the project in **Android Studio** 
+3. Wait for Gradle to sync
+4. Run on an emulator (API 24 or higher) or a physical Android device
+5. Type a time of day and tap **GET MY SPARK**
+
+---
+
+## 🔄 GitHub Actions
+
+This project uses **GitHub Actions** for automated building. Every time code is pushed to the `main` branch, GitHub automatically:
+
+1. Sets up a Java 17 environment on an Ubuntu server
+2. Builds the app using Gradle 
+3. Runs all unit tests
+
+This ensures the code always builds correctly and not just on my own computer.
+
+The workflow file is located at: `.github/workflows/build.yml`
+
+---
+
+## 📂 Project Structure
+SocialSpark/
+├── app/
+│   ├── src/
+│   │   └── main/
+│   │       ├── java/com/yourname/socialspark/
+│   │       │   └── MainActivity.kt       ← All app logic
+│   │       └── res/
+│   │           ├── layout/
+│   │           │   └── activity_main.xml ← UI design
+│   │           └── values/
+│   │               ├── colors.xml        ← App colours
+│   │               └── themes.xml        ← App theme
+├── .github/
+│   └── workflows/
+│       └── build.yml                     ← GitHub Actions config
+└── README.md                             ← This file
+
+---
+
+## 🧪 Testing
+
+Manual testing was conducted on a **Pixel 6 emulator (API 34)**:
+
+| Test Case | Input | Expected Output | Result |
+|---|---|---|---|
+| Valid morning input | "Morning" | Morning spark suggestion | ✅ Pass |
+| Valid dinner input | "Dinner" | Dinner spark suggestion | ✅ Pass |
+| Empty input | (nothing) | Error: "You forgot to type..." | ✅ Pass |
+| Invalid input | "xyz" | Error with valid options list | ✅ Pass |
+| Reset button | Click Reset | All fields cleared | ✅ Pass |
+| Case sensitivity | "MORNING" | Morning spark suggestion | ✅ Pass |
+
+Logging (using Android's `Log` class) was used throughout development to trace execution and confirm correct behaviour in Logcat.
+
+---
+
+## 🎬 Video Demonstration
+
+[CLICK HERE TO WATCH THE APP DEMO](YOUR_YOUTUBE_LINK_HERE)
+
+*The video demonstrates all features of the app including: time input, spark suggestions for each time period, error handling, and the reset function.*
+
+---
+
+## 📚 References
+
+- The Independent Institute of Education. (2026). *IMAD5112 Module Manual: Introduction to Mobile Application Development*. IIE.
+- Android Developers. (2026). *Android Studio documentation*. https://developer.android.com/studio
+- Android Developers. (2026). *Kotlin for Android*. https://developer.android.com/kotlin
+- GitHub. (2026). *GitHub Actions documentation*. https://docs.github.com/en/actions
