@@ -36,6 +36,11 @@ Modern life is busy, and it's easy to forget to check in with the people we care
 | Reset button | One tap clears everything and starts fresh |
 | Logging | App logs all key events for debugging (visible in Logcat) |
 
+below is an example of the app in action:
+
+<img width="259" height="564" alt="image" src="https://github.com/user-attachments/assets/ab32fad2-d0c8-4079-a61f-bd620f89a3d2" />
+
+
 ---
 
 ## 💡 Social Spark Suggestions
@@ -65,6 +70,11 @@ The app uses a dark theme with a red accent colour (`#E94560`) to create a moder
 - A hints section at the bottom shows users exactly what to type, reducing frustration
 - The result card is hidden until needed, keeping the interface clean
 - Error messages are friendly and instructive, not punishing
+
+Below is a screenshot of the UI:
+
+<img width="265" height="565" alt="image" src="https://github.com/user-attachments/assets/5dab4d00-f044-41ae-b784-6f4f1b5df1d4" />
+
 
 ---
 
