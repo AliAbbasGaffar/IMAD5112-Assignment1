@@ -101,6 +101,8 @@ This ensures the code always builds correctly and not just on my own computer.
 
 The workflow file is located at: `.github/workflows/build.yml`
 
+
+
 ---
 
 ## 📂 Project Structure
@@ -120,6 +122,9 @@ SocialSpark/
 │   └── workflows/
 │       └── build.yml                     ← GitHub Actions config
 └── README.md                             ← This file
+
+
+
 
 ---
 
